@@ -1,0 +1,22 @@
+.DS_Store
+
+# Experiment results
+**/Results/
+
+# Python cache
+__pycache__/
+**/__pycache__/
+
+# Images and dataset
+**/raw_dataset/
+**/dataset/images/
+**/dataset/masks/
+
+**/test_augmentations/
+
+# Logs
+**/logs.txt
+**/output.log
+
+# Virtual environments
+**/.venv/
