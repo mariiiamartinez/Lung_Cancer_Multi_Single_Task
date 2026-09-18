@@ -8,7 +8,10 @@ __pycache__/
 **/__pycache__/
 
 # Images and dataset
-**/raw_dataset/
+**/raw_dataset/cancer/
+**/raw_dataset/healthy/
+**/raw_dataset/masks_cancer/
+**/raw_dataset/masks_healthy/
 **/dataset/images/
 **/dataset/masks/
 
