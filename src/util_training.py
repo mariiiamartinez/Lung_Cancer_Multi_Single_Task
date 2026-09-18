@@ -562,7 +562,7 @@ class BaseTrainer(GradCAMMapManager):
         ax.plot(df['epoch'].astype(float), df[train_col].astype(float), 'r', label='Train')
         valid_rows = df[df[val_col] != 'N/A']
         if len(valid_rows) > 0:
-            ax.plot(valid_rows['epoch'].astype(float), valid_rows[val_col].astype(float), 'g', label='Validation')
+            ax.plot(valid_rows['epoch'].astype(float), valid_rows[val_col].astype(float), 'b', label='Validation')
         ax.set_title(title)
         ax.set_xlabel('Epoch')
         ax.set_ylabel(ylabel)

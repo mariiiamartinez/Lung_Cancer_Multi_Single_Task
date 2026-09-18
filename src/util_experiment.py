@@ -233,7 +233,7 @@ def _plot_mean_std_curve(train_matrix, val_matrix, title, ylabel, save_path, tra
     ax.set_xlabel('Epoch')
     ax.set_ylabel(ylabel)
 
-    for matrix, color, label in ((train_matrix, 'r', train_label), (val_matrix, 'g', val_label)):
+    for matrix, color, label in ((train_matrix, 'r', train_label), (val_matrix, 'b', val_label)):
         if matrix is None:
             continue
         mean = np.nanmean(matrix, axis=0)
