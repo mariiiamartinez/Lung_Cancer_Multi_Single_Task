@@ -888,11 +888,11 @@ class BaseTrainer(GradCAMMapManager):
                     args, model, input_batch, target_seg_batch, target_class_batch,
                     parameters,
                 )
-                total_training_loss += train_results['loss']
+                total_training_loss += (train_results['loss'] * train_results['n_images'])
                 if train_results['segm_loss'] is not None:
-                    total_segmentation_loss += train_results['segm_loss']
+                    total_segmentation_loss += (train_results['segm_loss'] * train_results['n_images'])
                 if train_results['cls_loss'] is not None:
-                    total_classification_loss += train_results['cls_loss']
+                    total_classification_loss += (train_results['cls_loss'] * train_results['n_images'])
                 total_correct += train_results['correct'] or 0
                 total_dice += train_results['dice']
                 total_iou += train_results['iou']
