@@ -23,7 +23,8 @@ python main.py \
     --task segmentation \
     --init-features 32 \
     --dataset-folder ../dataset/images \
-    --masks-folder ../dataset/masks
+    --masks-folder ../dataset/masks \
+    --classification-csv ../dataset/labels.csv
 
 echo ""
 echo ">>> U-Net 32 | Classification"
@@ -56,7 +57,8 @@ python main.py \
     --task segmentation \
     --init-features 64 \
     --dataset-folder ../dataset/images \
-    --masks-folder ../dataset/masks
+    --masks-folder ../dataset/masks \
+    --classification-csv ../dataset/labels.csv
 
 echo ""
 echo ">>> U-Net 64 | Classification"
@@ -90,7 +92,8 @@ python main.py \
     --encoder resnet18 \
     --encoder-weights imagenet \
     --dataset-folder ../dataset/images \
-    --masks-folder ../dataset/masks
+    --masks-folder ../dataset/masks \
+    --classification-csv ../dataset/labels.csv
 
 echo ""
 echo ">>> ResNet18 | Classification"
@@ -126,7 +129,8 @@ python main.py \
     --encoder resnet34 \
     --encoder-weights imagenet \
     --dataset-folder ../dataset/images \
-    --masks-folder ../dataset/masks
+    --masks-folder ../dataset/masks \
+    --classification-csv ../dataset/labels.csv
 
 echo ""
 echo ">>> ResNet34 | Classification"
@@ -162,7 +166,8 @@ python main.py \
     --encoder resnet50 \
     --encoder-weights imagenet \
     --dataset-folder ../dataset/images \
-    --masks-folder ../dataset/masks
+    --masks-folder ../dataset/masks \
+    --classification-csv ../dataset/labels.csv
 
 echo ""
 echo ">>> ResNet50 | Classification"

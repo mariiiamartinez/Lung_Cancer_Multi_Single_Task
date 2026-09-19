@@ -52,12 +52,10 @@ def _build_parser() -> argparse.ArgumentParser:
     dat.add_argument("--dataset-folder", type=str, required=True, dest="input_dir_root",
                      help="Path to the directory where the input images are stored.")
     dat.add_argument("--masks-folder", type=str, default=None, dest="lung_segm_root_dir",
-                     help="Path to the directory with the lung segmentation masks. "
-                          "Required for segmentation and multitask tasks.")
+                     help="Path to the directory with the lung segmentation masks. ")
     dat.add_argument("--classification-csv", type=str, default=None,
                      dest="classification_csv_file_path",
-                     help="Path to the CSV file with classification labels. "
-                          "Required for classification and multitask tasks.")
+                     help="Path to the CSV file with classification labels. ")
     dat.add_argument("--classification-image-column", type=str, default="image_name",
                      help="Name of the image-name column in the classification CSV.")
     dat.add_argument("--classification-label-column", type=str, default="class_label",
